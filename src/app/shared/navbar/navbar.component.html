@@ -1,0 +1,20 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand">Effects</a>
+
+
+    <div class="d-flex mr-2">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row">
+        <li class="nav-item mx-2">
+          <a class="nav-link" aria-current="page" routerLink="home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" aria-current="page" routerLink="usuario/1" routerLinkActive="active">Usuario</a>
+        </li>
+      </ul>
+
+      <input class="form-control me-2" #txtInput placeholder="Buscar..." (keyup.enter)="irUsuario(txtInput.value)">
+    </div>
+
+  </div>
+</nav>
